@@ -3,14 +3,94 @@
   <head>
     <meta charset='utf-8'>
     <title>Survey Form</title>
-    <link rel='stylesheets' href='styles.css'/>
+    <!-- Corrected the link rel attribute -->
+    <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
+   <div class='container'>
     <header>
-    <h1 id='title'>What's your investment type<h1>
-    <p>Please fill out this survey and you'll know what's your investment type!</p>
+    <!-- Corrected the closing h1 tag -->
+    <h1 id='title'>The Survey Of Your Investment Type</h1>
+    <p id='description' class='description text-center'>Fill out this survey and you'll know what's your investment type!</p>
     </header>
-    <form>
-      </form>
+    <form id='survey-form'>
+      <div class='form-group'>
+        <label id='name-label' for='name'>Name</label>  
+        <input 
+        id='name' 
+        type='text'
+        class='form-control'
+        placeholder='enter your name'
+        required
+         />  
+      </div>
+      <div class='form-group'>
+        <label id='email-label' for='email'>Email</label>  
+        <input 
+        id='email'
+        type='email'
+        class='form-control'
+        placeholder='enter your email'
+        required 
+        />   
+      </div>
+      <div class='form-group'>
+        <label id='number-label' for='name'>Age</label>   
+        <input
+        id='number'
+        type='number'
+        name='age'
+        min='10'
+        max='99'
+        class='form-control'
+        placeholder='Age'
+      </div>
+      <div class='form-group label2'>
+        <p>Which option best describe your current salary?</p>
+        <select  id='dropdown' name='job' class='form-control ' required>
+          <option value=''>(Select one)</option>
+          <option value='1'>$20,000/year</option>
+          <option value='2'>$20,000-$100,000/year</option>
+          <option value='3'>$100,000-$500,000</option>
+          <option value='4'>more than $500,000</option>
+        </select>  
+      </div>
+      <div class='form-group label2'>
+        <div>
+        <label for='assets-question'>Which assets do you prefer to own?</label>
+        </div>
+        <div class='form-group label2'>
+        <label for='assets-stock'>
+          <input
+          id='assets-stock'
+          type='radio'
+          name='assets-type'
+          class='inline'
+          />Stock
+          </label>
+        </div>
+        <div class='form-group label2'>
+        <label for='assets-cash'>
+          <input
+          id='assets-cash'
+          type='radio'
+          name='assets-type'
+          class='inline'
+          />Cash
+        </label>
+        </div>
+        <div class='form-group label2'>
+        <label for='assets-bonds'>
+          <input
+          id='assets-bonds'
+          type='radio'
+          name='assets-type'
+          />Bonds
+        </label>
+        </div>
+
+      </div>
+
+    </form>
   </body>
 </html>
