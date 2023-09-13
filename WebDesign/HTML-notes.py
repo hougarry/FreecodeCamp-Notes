@@ -16,6 +16,14 @@ label{
 
 margin: 10px 0 0 0;  # top right bottom left.  -clockwise order
 
+# CSS button
+button[type="submit"] {
+  display: block;
+  width: 60%;
+}
+#it targets button elements with a type attribute equal to "submit." It sets their display property to "block" and their width property to "60%."
+
+
 
 # 1. <area />: Defines an area inside an image map.
 # 2. <base />: Specifies a base URL for relative URLs in a document.
