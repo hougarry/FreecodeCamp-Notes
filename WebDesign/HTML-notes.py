@@ -14,7 +14,8 @@ label{
 #0.5rem: This is the top and bottom margin. It sets a margin of 0.5 "rem" units on the top and 0.5 "rem" units on the bottom of the element. The "rem" unit is relative to the font size of the root element (typically the <html> element).
 #0: This is the right and left margin. It sets a margin of 0 units on the right and 0 units on the left of the element.
 
-margin: 10px 0 0 0;  # top right bottom left.  -clockwise order
+margin: 10px 0 0 0;  # top right bottom left.-clockwise order
+margin: 1em auto; # sets the top and bottom margins to 1em each and uses auto for the right and left margins
 
 # CSS button
 button[type="submit"] {
