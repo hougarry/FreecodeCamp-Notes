@@ -16,6 +16,8 @@ label{
 
 margin: 10px 0 0 0;  # top right bottom left.-clockwise order
 margin: 1em auto; # sets the top and bottom margins to 1em each and uses auto for the right and left margins
+ margin: 0 auto 20px;
+#0 (top margin)auto (horizontal margin)20px (bottom margin)
 
 # CSS button
 button[type="submit"] {
