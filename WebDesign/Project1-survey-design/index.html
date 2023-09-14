@@ -7,90 +7,136 @@
     <link rel='stylesheet' href='styles.css'/>
   </head>
   <body>
-   <div class='container'>
-    <header>
-    <!-- Corrected the closing h1 tag -->
-    <h1 id='title'>The Survey Of Your Investment Type</h1>
-    <p id='description' class='description text-center'>Fill out this survey and you'll know what's your investment type!</p>
-    </header>
-    <form id='survey-form'>
-      <div class='form-group'>
-        <label id='name-label' for='name'>Name</label>  
-        <input 
-        id='name' 
-        type='text'
-        class='form-control'
-        placeholder='enter your name'
-        required
-         />  
-      </div>
-      <div class='form-group'>
-        <label id='email-label' for='email'>Email</label>  
-        <input 
-        id='email'
-        type='email'
-        class='form-control'
-        placeholder='enter your email'
-        required 
-        />   
-      </div>
-      <div class='form-group'>
-        <label id='number-label' for='name'>Age</label>   
-        <input
-        id='number'
-        type='number'
-        name='age'
-        min='10'
-        max='99'
-        class='form-control'
-        placeholder='Age'
-      </div>
-      <div class='form-group label2'>
-        <p>Which option best describe your current salary?</p>
-        <select  id='dropdown' name='job' class='form-control ' required>
-          <option value=''>(Select one)</option>
-          <option value='1'>$20,000/year</option>
-          <option value='2'>$20,000-$100,000/year</option>
-          <option value='3'>$100,000-$500,000</option>
-          <option value='4'>more than $500,000</option>
-        </select>  
-      </div>
-      <div class='form-group label2'>
+    <div class='container'>
+      <header>
+        <!-- Corrected the closing h1 tag -->
+        <h1 id='title'>The Survey Of Your Investment Type</h1>
+        <p id='description' class='description text-center'>Fill out this survey and you'll know your investment type!</p>
+      </header>
+      <form id='survey-form'>
+        <div class='form-group'>
+          <label id='name-label' for='name'>Name</label>
+          <input
+            id='name'
+            type='text'
+            class='form-control'
+            placeholder='Enter your name'
+            required
+          />
+        </div>
+        <div class='form-group'>
+          <label id='email-label' for='email'>Email</label>
+          <input
+            id='email'
+            type='email'
+            class='form-control'
+            placeholder='Enter your email'
+            required
+          />
+        </div>
+        <div class='form-group'>
+          <label id='number-label' for='number'>Age</label>
+          <input
+            id='number'
+            type='number'
+            name='age'
+            min='10'
+            max='99'
+            class='form-control'
+            placeholder='Age'
+          />
+        </div>
+        <div class='form-group label2'>
+          <div>
+            <label for='dropdown'>Which option best describes your current salary?</label>
+          </div>
+          <select id='dropdown' name='job' class='form-control' required>
+            <option value=''>Select one</option>
+            <option value='1'>$20,000/year</option>
+            <option value='2'>$20,000-$100,000/year</option>
+            <option value='3'>$100,000-$500,000</option>
+            <option value='4'>More than $500,000</option>
+          </select>
+        </div>
+        <div class='form-group'>
+          <div>
+            <label for='salary' class='question'>If you can only choose one, which assets do you prefer to own?</label>
+          </div>
+          <div class='form-group label2'>
+
+            <label for='assets-stock'>
+              <input
+                id='assets-stock'
+                type='radio'
+                name='assets-type'
+                class='inline'
+                value='Stock'
+              />Stock
+            </label>
+            <label for='assets-cash'>
+              <input
+                id='assets-cash'
+                type='radio'
+                name='assets-type'
+                class='inline'
+                value='Cash'
+              />Cash
+            </label>
+            <label for='assets-bonds'>
+              <input
+                id='assets-bonds'
+                type='radio'
+                name='assets-type'
+                value='Bonds'
+              />Bonds
+            </label>
+          </div>
+        </div>
         <div>
-        <label for='assets-question'>Which assets do you prefer to own?</label>
+          <div>
+          <label for='bio' class='label2'>Provide a bio:</label>
+          </div>
+          <textarea
+            id='bio'
+            name='bio'
+            rows='4'
+            cols='30'
+            placeholder='Tell us about your investment interests'
+          ></textarea>
         </div>
-        <div class='form-group label2'>
-        <label for='assets-stock'>
-          <input
-          id='assets-stock'
-          type='radio'
-          name='assets-type'
-          class='inline'
-          />Stock
-          </label>
+        <div class='form-group'>
+          <label for='referrer' class='question'>Where did you hear about us?</label>
+          <div class='checkbox-group'>
+            <label for='referrer-youtube'>
+              <input
+                type='checkbox'
+                id='referrer-youtube'
+                name='referrer'
+                value='youtube'
+              />Youtube
+            </label>
+            <label for='referrer-forum'>
+              <input
+                type='checkbox'
+                id='referrer-forum'
+                name='referrer'
+                value='forum'
+              />Forum
+            </label>
+            <label for='referrer-other'>
+              <input
+                type='checkbox'
+                id='referrer-other'
+                name='referrer'
+                value='other'
+              />Other
+            </label>
+          </div>
         </div>
-        <div class='form-group label2'>
-        <label for='assets-cash'>
-          <input
-          id='assets-cash'
-          type='radio'
-          name='assets-type'
-          class='inline'
-          />Cash
-        </label>
+        <div class='form-group'>
+          <button type='submit' id='submit'>Submit</button>
         </div>
-        <div class='form-group label2'>
-        <label for='assets-bonds'>
-          <input
-          id='assets-bonds'
-          type='radio'
-          name='assets-type'
-          />Bonds
-        </label>
-        </div>
-
-      </div>
-
-    </form>
+      </form>
+    </div>
   </body>
 </html>
