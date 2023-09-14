@@ -19,6 +19,10 @@ margin: 1em auto; # sets the top and bottom margins to 1em each and uses auto fo
  margin: 0 auto 20px;
 #0 (top margin)auto (horizontal margin)20px (bottom margin)
 
+border-radius: 8px 10px 8px 10px;
+#: top-left, top-right, bottom-right, and bottom-left.-clockwise order
+
+
 # CSS button
 button[type="submit"] {
   display: block;
