@@ -1,3 +1,4 @@
+/* General styles for the entire page */
 body {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   background-size: cover;
@@ -5,48 +6,112 @@ body {
   background-attachment: fixed;
   width: 100%;
   height: 100vh;
-  background-color: rgba(0, 124, 255, 0.3); /* 50% opacity */
-  font-family: Tahoma;
+  background-color: rgba(0, 124, 255, 0.3); /* 30% opacity */
+  font-family: Tahoma, sans-serif;
   font-size: 16px;
   padding: 20px;
   color: white;
+  margin: 0; /* Remove default margin for body */
 }
-.container{
+
+/* Container styles */
+.container {
   background-color: #25418D;
   padding: 10px 0;
+  border-radius: 5px; /* Add some border-radius for a rounded look */
 }
-h1{
+
+/* Header styles */
+h1 {
   margin: 1em auto;
   text-align: center;
+  font-size: 24px; /* Increase font size for headings */
 }
-p,label{
+
+/* Paragraph and label styles */
+p, label {
   font-size: 15px;
   margin: 1em auto;
   text-align: center;
 }
-.description{
+
+/* Description styles */
+.description {
   font-style: italic;
 }
+
+/* Form styles */
 form {
-  width: 60vw;
+  width: 90%; /* Adjust the form width */
   max-width: 500px;
-  min-width: 300px;
   margin: 0 auto;
   padding-bottom: 2em;
 }
-.form-group{
-  display: block;
-  margin: 0，auto;
-  border: none;
-  padding: 2rem 0;
 
+/* Form group styles */
+.form-group {
+  margin: 1em auto; /* Adjust the margin */
 }
-.form-control{
+
+/* Form control styles */
+.form-control {
+  width: 100%;
+  min-height: 2em;
+  padding: 5px; /* Add padding for input elements */
+  border: none;
+  background-color: #ffffff;
+  color: #000000; /* Change text color to black for better readability */
+}
+
+/* Submit button styles */
+button[type='submit'] {
+  display: block;
+  width: 50%;
+  margin: 1em auto;
+  height: 2em;
+  background-color: #25418D;
+  border-color: white;
+  border-size: 4em;
+  font-size: 1.1rem;
+  min-width: 300px;
+  color: white;
+  cursor: pointer; /* Add pointer cursor to the button */
+}
+
+/* Radio button group styles */
+.label2 {
+  display: flex;
+  font-size: 1em;
   margin: auto;
 }
-.label2{
-  text-align: center;
-  display: block;
-  margin: 0，auto;
-  border: none;
+
+/* Adjust the radio button size and spacing */
+input[type="radio"] {
+  transform: scale(1.2); /* Increase radio button size */
+  margin-right: 5px; /* Add spacing between radio buttons */
+}
+
+/* Question container styles */
+.question {
+  margin: auto;
+  display: flex;
+  flex-direction: column; /* Change to a vertical layout for better readability */
+}
+
+/* Checkbox group styles */
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Adjust checkbox styles */
+.checkbox-group input[type='checkbox'] {
+  margin-right: 5px;
+}
+
+/* Label styles for checkboxes */
+.checkbox-group label {
+  display: flex;
+  align-items: center;
 }
