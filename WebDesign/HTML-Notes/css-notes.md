@@ -55,3 +55,9 @@ Each `<a>` tag has an `href` attribute that specifies the destination or anchor 
 
 Make sure to place this list within your HTML document's `<body>` element where you want the navigation menu to appear. Also, ensure that you have corresponding elements in your page with the `id` attributes "info," "html," and "css" so that the links will scroll to the appropriate sections when clicked.
 
+**5. To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #"**
+p::before{
+  content: "Question #"
+}
+Then you will see: Question # 2,   2 is `<p>2</p>`
+
