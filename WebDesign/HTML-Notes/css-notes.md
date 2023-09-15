@@ -6,3 +6,5 @@ body {
 ```
 
  fallback means  a secondary or backup option that is used when the primary choice is not available or supported.
+
+ 2. structure of css:  margin/border/padding, height/content/width/. mbp,hcw(mackbookpro, hey, can't wait)
