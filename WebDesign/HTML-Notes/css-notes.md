@@ -9,7 +9,8 @@ body {
 
  2. structure of css:  margin/border/padding, height/content/width/. mbp,hcw(mackbookpro, hey, can't wait)
 
-3. In HTML, if an element has the `class` attribute set to "logo," you would target it in CSS using the class selector `.logo`:
+**3.what's the difference between id and class?**
+In HTML, if an element has the `class` attribute set to "logo," you would target it in CSS using the class selector `.logo`:
 
 ```css
 /* CSS for elements with class="logo" in HTML */
