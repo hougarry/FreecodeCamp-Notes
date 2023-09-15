@@ -45,7 +45,7 @@ To create a navigation menu with an unordered list where each list item is a lin
 </ul>
 ```
 
-In this code:
+In this `code`:
 
 - `<ul>` represents an unordered list.
 - `<li>` represents each list item within the list.
