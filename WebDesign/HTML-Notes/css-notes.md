@@ -57,8 +57,10 @@ Make sure to place this list within your HTML document's `<body>` element where 
 
 
 **5. To prevent unnecessary repetition, target the before pseudo-element of the p element, and give it a content property of "Question #"**
+```
 p::before{
   content: "Question #"
 }
+```
 Then you will see: Question # 2,   2 is `<p>2</p>`
 
