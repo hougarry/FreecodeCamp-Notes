@@ -94,7 +94,7 @@ wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh d
 ### input your account userid, how to find ?
   search'userinfobot'   input'/start/
   you will get you id like: 5816788429
-  
+
 
  warp b (升级内核、开启BBR及DD)
  warp a (更换账户为 Free，WARP+ 或 Teams)
@@ -127,5 +127,11 @@ chmod +x tcp.sh
 内核安装完成后，输入y进行重启，重启才能让内核生效
 
 重启完成后，输入数字6来启动暴力BBR魔改版加速
+
+再次输入 ./tcp.sh  check
+
+ 当前状态: 已安装 BBR 加速内核 , BBR启动成功
+
+ 请输入数字 [0-11]:
 
 [我用了bbr plus]
