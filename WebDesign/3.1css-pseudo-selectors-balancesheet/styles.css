@@ -37,3 +37,25 @@ span[class~="sr-only"] {
     font-size: 1.2em;
     font-weight: 700;
   }
+  section{
+    max-width: 40rem;
+    margin:0 auto;
+    border: 2px solid #d0d0d5;
+  }
+  #years{
+    display: flex;
+    justify-content:flex-end;
+    padding: 1rem 1.25rem;
+    top: 0;
+    position: sticky;
+    color: #fff;
+    background-color: #0a0a23;
+    margin:0 -2px;
+    padding: 0.5rem calc(1.25rem + 2px) 0.5rem 0 ;
+    z-index: 999;
+  }
+  #years span[class]{
+    
+  }
+
+
