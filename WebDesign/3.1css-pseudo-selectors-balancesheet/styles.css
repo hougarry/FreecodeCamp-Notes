@@ -55,7 +55,9 @@ span[class~="sr-only"] {
     z-index: 999;
   }
   #years span[class]{
-    
+    font-weight: bold;
+    text-align: right;
+    width: 4.5rem;
   }
 
 
