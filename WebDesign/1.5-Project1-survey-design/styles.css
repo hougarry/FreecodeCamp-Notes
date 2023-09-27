@@ -71,7 +71,7 @@ button[type='submit'] {
   height: 2em;
   background-color: #25418D;
   border-color: white;
-  border-size: 4em;
+  border-width: 4em;
   font-size: 1.1rem;
   min-width: 300px;
   color: white;
@@ -114,4 +114,11 @@ input[type="radio"] {
 .checkbox-group label {
   display: flex;
   align-items: center;
+}
+textarea{
+  background-color: rgba(0, 14, 42, 0.7);
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  color: white;
 }
