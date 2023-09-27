@@ -118,7 +118,27 @@ body {
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
     transform: rotate(180deg);
+  }
+  .cat-mouth div{
+    width: 30px;
+    height: 50px;
+    border: 2px solid #000;
+    border-color: black transparent transparent transparent;
+    border-radius: 190%/190px 150px 0 0;
+    position: absolute;
 
+  }
+  .cat-mouth-line-left{
+    position: absolute;
+    top: 88px;
+    left: 74px;
+    transform: rotate(170deg);
+  }
+  .cat-mouth-line-right{
+    position: absolute;
+    top: 88px;
+    left: 91px;
+    transform: rotate(165deg);
   }
 
 
