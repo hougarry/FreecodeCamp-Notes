@@ -9,6 +9,7 @@ html{
     width: 992px;
     height: 290px;
     margin: 80px auto;
+    position:relative;
 }
 .keys{
     background-color: #040404;
@@ -38,4 +39,5 @@ html{
     position: absolute;
     top: 23px;
 }
+
 
