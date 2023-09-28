@@ -36,3 +36,16 @@ In this example, the `<thead>` section contains one row (`<tr>`) with three head
 The `<tbody>` section is used for the table's body, where you would typically place the data rows (`<tr>`) and data cells (`<td>`).
 
 Remember that this is just a basic structure, and you can customize it further by adding more rows and cells or applying CSS styles to improve the table's appearance and functionality.
+
+
+## html-css
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+*, *:before, *:after { box-sizing: inherit; }: This CSS rule is a bit more complex. It uses the universal selector * to select all elements in the HTML document, along with *::before and *::after to select pseudo-elements that are before and after each element, respectively. It then sets the box-sizing property to inherit.
+
+box-sizing: inherit; means that these elements (including pseudo-elements) will inherit the box-sizing property value from their parent elements. So, if a specific element or its parent has box-sizing: border-box, then all of its children and pseudo-elements will also have box-sizing: border-box.
