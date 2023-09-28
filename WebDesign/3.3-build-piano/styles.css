@@ -18,6 +18,7 @@ html{
     height: 180px;
     padding-left: 2px;
     padding: 90px 20px 0 20px;
+    overflow: hidden;
 }
 .key{
     background-color: #ffffff;
