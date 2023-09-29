@@ -22,8 +22,8 @@ html{
     position: fixed;
     top: 0;
     left: 0;
-    width: 20%;
-    min-width: 160px;
+    width: 10%;
+    min-width: 60px;
     height: 100%;
     background-color: #333;
     color: #fff;
@@ -31,18 +31,22 @@ html{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    flex-wrap: wrap;  /* Allow items to wrap */
     padding: 10px 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     overflow-y: auto;
 }
-
+#navbar > *{
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
 @media (max-width: 768px){
     #navbar{
-        position: static;
-        width: 50%;
-        height: auto;
-        padding: 10px;
-        box-shadow: none;
+        display: none;
+
     }
 }
 
