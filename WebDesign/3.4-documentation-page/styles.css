@@ -23,6 +23,7 @@ html{
     top: 0;
     left: 0;
     width: 20%;
+    min-width: 160px;
     height: 100%;
     background-color: #333;
     color: #fff;
@@ -33,5 +34,15 @@ html{
     padding: 10px 0;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     overflow-y: auto;
+}
+
+@media (max-width: 768px){
+    #navbar{
+        position: static;
+        width: 50%;
+        height: auto;
+        padding: 10px;
+        box-shadow: none;
+    }
 }
 
