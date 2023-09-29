@@ -112,10 +112,28 @@ code{
     border-radius: 3px;
     display: block;
 }
-.code-block{
-    margin-left: 20px;
-    margin-bottom: 20px;
+.code-block {
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 20px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    max-width: 100%;
+    overflow: auto;
+}
+.code-block pre {
+    margin: 0;
+}
+.code-block code {
     display: block;
+    white-space: pre-wrap;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    line-height: 1.5;
 }
 
 
