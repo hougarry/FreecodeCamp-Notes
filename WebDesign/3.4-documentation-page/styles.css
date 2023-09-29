@@ -104,14 +104,7 @@ section article p{
     margin-bottom: 10px;
     font-style: normal;
 }
-code{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1em;
-    background-color: #ecf0f1;
-    padding: 2px 5px;
-    border-radius: 3px;
-    display: block;
-}
+
 .code-block {
     position: relative;
     background-color: #f9f9f9;
@@ -124,6 +117,7 @@ code{
     overflow: auto;
 }
 .code-block pre {
+    white-space: pre;
     margin: 0;
 }
 .code-block code {
@@ -131,9 +125,13 @@ code{
     white-space: pre-wrap;
     padding: 10px;
     border-radius: 4px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  'Courier New', Courier, monospace;
     font-size: 0.9em;
     line-height: 1.5;
+    color:#fff;
+    background-color: #3498db;
+    text-align: left;
+    
 }
 
 
