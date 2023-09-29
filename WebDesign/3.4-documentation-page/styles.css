@@ -1,0 +1,31 @@
+html{
+    background-color: #f5f5f5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-doc{
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+#main-doc h1{
+    text-align: center;
+    margin: 20px 0;
+}
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    overflow-y: auto;
+}
