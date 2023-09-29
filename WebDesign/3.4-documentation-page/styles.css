@@ -91,6 +91,31 @@ section header{
     font-family: 'Courier New', Courier, monospace;
     font-size: 1.5em;
     font-weight: bold;
+    font-display: block;
+    font-style: italic;
+}
+section article{
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    line-height: 1.5;
+}
+section article p{
+    margin-bottom: 10px;
+    font-style: normal;
+}
+code{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    background-color: #ecf0f1;
+    padding: 2px 5px;
+    border-radius: 3px;
+    display: block;
+}
+.code-block{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: block;
 }
 
 
