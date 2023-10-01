@@ -12,7 +12,7 @@ body{
     height: 100%;
     display: flex;
     align-items: flex-end;
-    justify-content: space-evenly
+    justify-content: space-evenly;
 }
 .bb1{
     width: 10%;
