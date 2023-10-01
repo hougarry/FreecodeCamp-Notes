@@ -48,7 +48,7 @@ body{
 .bb2{
     width: 10%;
     height: 50%;
-    background-color: var(--building-color2);
+    background-color: var(--building-color2, green);
 }
 .bb3{
     width: 10%;
