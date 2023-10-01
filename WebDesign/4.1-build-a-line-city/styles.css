@@ -10,6 +10,7 @@ body{
 .background-buildings{
     width: 100%;
     height: 100%;
+    display: flex;
 }
 .bb1{
     width: 10%;
