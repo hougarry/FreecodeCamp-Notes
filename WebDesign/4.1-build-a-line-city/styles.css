@@ -16,12 +16,14 @@ body{
     height: 70%;
     display: flex;
     flex-direction: column;
-    align-items: center;   
+    align-items: center;  
+    --building-color1: #999;
 
 }
 .bb1a{
     width: 70%;
     height: 10%;
+    background-color: var(--building-color1);
 }
 .bb1b{
     width: 80%;
