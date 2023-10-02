@@ -66,6 +66,7 @@ body{
     background-color: var(--building-color4);
 }
 
+/* FOREGROUND BUILDINGS - "fb" stands for "foreground building"  */
 .fb1{
     width: 10%;
     height: 60%;
