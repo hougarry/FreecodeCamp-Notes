@@ -13,7 +13,9 @@ body{
     margin: 0;
     overflow: hidden;
 }
-.background-buildings{
+.background-buildings, .foreground-buildings {
+    position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     display: flex;
@@ -94,7 +96,4 @@ body{
     height: 38%;
     background-color: var(--building-color3);
 }
-.background-buildings, .foreground-buildings {
-    position: absolute;
-    top: 0;
-}
+
