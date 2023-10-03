@@ -22,6 +22,7 @@ body{
     align-items: flex-end;
     justify-content: space-evenly;
 }
+/*BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1{
     width: 10%;
     height: 70%;
