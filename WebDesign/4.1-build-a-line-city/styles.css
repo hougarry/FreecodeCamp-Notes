@@ -3,7 +3,9 @@
     --building-color2: #66cc99;
     --building-color3: #cc6699;
     --building-color4: #538cc6;
+    --window-color1: black;
 }
+
 * {
     border:1px solid black;
     box-sizing: border-box;
@@ -33,8 +35,12 @@ body{
 }
 .bb1a{
     width: 70%;
-    height: 10%;
     background-color: var(--building-color1);
+
+}
+.bb1-window{
+    height: 10%;
+    background: linear-gradient( var(--building-color1) , var(--window-color1));
 }
 .bb1b{
     width: 80%;
