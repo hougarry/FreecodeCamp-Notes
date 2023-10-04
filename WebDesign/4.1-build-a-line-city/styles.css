@@ -63,7 +63,9 @@ body{
 .bb2b{
     width: 100%;
     height: 100%;
+    background: linear-gradient( var(--building-color2) 0%,var(--building-color2) 6%, var(--window-color2) 40%,var(--window-color2) 80%);
 }
+
 .bb3{
     width: 10%;
     height: 55%;
