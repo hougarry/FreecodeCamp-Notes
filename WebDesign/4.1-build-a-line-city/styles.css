@@ -10,7 +10,7 @@
 }
 
 * {
-    border:1px solid black;
+
     box-sizing: border-box;
 }
 body{
@@ -37,6 +37,9 @@ body{
    display: flex;
    align-items: center;
     justify-content: space-evenly;
+}
+.sky{
+    background: radical-gradient(#ffcf33 0%, #ffcf33 20%, #ffff66 21%, #bbeeff 100%);
 }
 /*BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1{
