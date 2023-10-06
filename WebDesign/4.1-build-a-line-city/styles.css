@@ -158,6 +158,14 @@ border-right: 5vw solid transparent;
     height: 35%;
     background-color: var(--building-color1);
 }
+.fb3a{
+    width: 80%;
+    height: 15%;
+}
+.fb3b{
+    width: 100%;
+    height: 35%;
+}
 .fb4{
     width: 8%;
     height: 45%;
