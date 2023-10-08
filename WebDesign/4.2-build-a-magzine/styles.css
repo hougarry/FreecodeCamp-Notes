@@ -1,0 +1,34 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+/*  rem = 1rem = 10px, rem means root em, em is relative to the parent element,
+2rem = 20px  62.5% = 10px 
+ */
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-family: Baskervville, serif;
+    color: linen;
+    background-color: rgb(20, 30, 40);
+}
+h1{
+    font-family: Anton, sans-serif;
+
+}
+h2,h3,h4,h5,h6{
+    font-family: Raleway, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: linen;
+}
+/* fr means fraction, 1fr = 1 fraction of the available space */
+main{
+    display: grid;
+    grid-template-columns: 1fr 94rem 1fr;
+    
+}
