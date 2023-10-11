@@ -38,3 +38,33 @@ main{
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1.5rem;
 }
+.hero{
+    grid-column: 1/-1;
+    position: relative;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.hero-title{
+    text-align: center;
+    color: orangered;
+    font-size: 8rem;
+}
+.hero-subtitle{
+    font-size: 2.4rem;
+    color: orangered;
+    text-align: center;
+}
+.author{
+    font-size: 2rem;
+    font-family: Raleway, sans-serif;
+}
+.author-name a:hover{
+    background: #306203;
+}
+.publish-data{
+    color: rgba(255, 255, 255, 0.5) ;
+}
+
