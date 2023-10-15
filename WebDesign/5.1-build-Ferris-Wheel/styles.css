@@ -7,6 +7,10 @@
     width: 55vw;
     max-width: 500px;
     max-height: 500px;
+    animation-name: wheel;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 .line{
     background-color: black;
@@ -69,7 +73,19 @@
     0% {
         transform: rotate(0deg);
     }
+    100% {
+        transform: rotate(360deg);
+    }
 }
+@keyframes cabins {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
 
 
 
