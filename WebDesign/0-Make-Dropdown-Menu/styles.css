@@ -93,11 +93,10 @@ body{
     color: #5eff00;
 }
 .menu-bar ul li:hover .sub-menu-1 ul li a i {
-    /* G: Aligning icon with text */
-    /* G: Adding a little space between the icon and text for clarity */
-    margin-right: 90px;
-    float: right;
-    
+    /* G: Adjusting margin-right for proper spacing between icon and text */
+    margin-right: 8px;
+    /* G: Ensuring the icon is vertically aligned with the text */
+    vertical-align: middle;
 }
 
 
@@ -106,6 +105,20 @@ body{
 }
 
 .hover-me:hover  .sub-menu-2{
+    position: absolute;
+    display: block;
+    margin-top: 0; /* G: Adjusted to align properly */
+    margin-left: 105px; /* G: Matching width with parent li */
+    background-color: #276485;
+    /* G: Adding padding and shadow as with sub-menu-1 */
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+.sub-memu-2 .sub-menu-3{
+    display: none;
+}
+.hover-me:hover .sub-menu-3{
     position: absolute;
     display: block;
     margin-top: 0; /* G: Adjusted to align properly */
