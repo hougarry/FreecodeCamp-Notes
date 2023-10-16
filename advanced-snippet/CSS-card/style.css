@@ -21,7 +21,6 @@ body{
 }
 .card{
     color: var(--color-neutral-100);
-    background-image: url("../bg3.jpg");
     background-size: cover;
     padding: 10rem 0 0;
     max-width: 35ch; /* 560px */
