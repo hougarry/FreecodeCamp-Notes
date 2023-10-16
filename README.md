@@ -27,3 +27,20 @@ Html-css-project
 Google-drive
 One-drive
 https://www.drv.tw/
+
+
+
+# 1. CSS
+
+--color-neural-900 means dark, 100 means light. neutral means gray. Similary,
+--color-primary-900 means dark, 100 means light. primary means blue.
+
+--color-secondary-900 means dark, 100 means light. secondary means green.  
+--color-tertiary-900 means dark, 100 means light. tertiary means yellow.
+--color-accent-900 means dark, 100 means light. accent means red.
+or you can use --color-red-900 means dark, 100 means light. red means red.
+
+hsl(0, 0%, 0%) means black, hsl(0, 0%, 100%) means white, hsl(0, 0%, 50%) means gray. hsl and regb are different color system. hsl is more intuitive than rgb.
+
+The color name primary, secondary, neutral is defined in the css file. The number 900, 100 is defined in the css file.
+The color theme name is defined, the primary color is blue, the secondary color is green, and the neutral color is gray,and other theme color , such as red, yellow, purple, pink, orange, brown, etc. are defined in the css file.
