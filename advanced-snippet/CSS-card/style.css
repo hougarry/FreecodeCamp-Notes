@@ -41,9 +41,7 @@ body{
         hsl(0 0% 0% / 1)
     );
 
-
 }
-
 
 .card-title{
     position: relative;
@@ -57,7 +55,6 @@ body{
     left: calc(var(--padding) * -1);  
     width: calc(100% + var(--padding));
     background: var(--color-accent-400);
-
     transform-origin: left;
     transition: transform 500ms ease;
 }
@@ -70,19 +67,6 @@ body{
     color: rgb(255, 255, 255 , 0.85);
 }
 
-.button{
-    cursor: pointer;
-    display: inline;
-    text-decoration: none;
-    color: var(--color-neutral-900);
-    background: var(--color-accent-400);
-    border-radius: .25rem;
-    padding: .5rem 1.2rem;
-}
-
-.button:hover, .button:focus{
-    background-color: var(--color-neutral-100);
-}
 @media (hover){
     .card-content{
         transform: translateY(65%);
@@ -111,6 +95,21 @@ body{
         transform: scaleX(0);
     }
 }
+
+.button{
+    cursor: pointer;
+    display: inline;
+    text-decoration: none;
+    color: var(--color-neutral-900);
+    background: var(--color-accent-400);
+    border-radius: .25rem;
+    padding: .5rem 1.2rem;
+}
+
+.button:hover, .button:focus{
+    background-color: var(--color-neutral-100);
+}
+
 
 @media (prefers-reduced-motion:reduce){
     *,
