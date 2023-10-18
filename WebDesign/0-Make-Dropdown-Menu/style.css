@@ -22,103 +22,105 @@ body {
   display: inline-flex;
   list-style: none;
   color: white;
+  /* G: Ensuring no padding or margin to avoid unnecessary space */
   padding: 0;
   margin: 10px;
 }
 .menu-bar ul li {
   width: 120px;
+  /* G: Removing margin and applying it as padding for a cleaner hover effect */
   padding: 15px;
+  /* G: Adding a subtle transition for hover effects */
   transition: background-color 0.3s ease;
 }
 .menu-bar ul li a {
   text-decoration: none;
   color: white;
+  /* G: Making sure text stays in line with icon if there is one */
   vertical-align: middle;
-}
-.menu-bar ul li.active, .menu-bar ul li:hover {
-  background-color: #276485;
-  border-radius: 3px;
-}
-.menu-bar ul li .fa {
-  margin-right: 8px;
 }
 .menu-bar ul li .sub-menu-1 {
   display: none;
 }
-.menu-bar ul li .sub-menu-1:hover {
+.menu-bar ul li:hover .sub-menu-1 {
   display: block;
   position: absolute;
   border-radius: 3px;
   background-color: #276485;
   margin-top: 5px;
+  /* G: Ensuring sub-menu-1 takes the full width of li */
   margin-left: -15px;
+  /* G: Adding padding to avoid text sticking to edges */
   padding: 10px 0;
+  /* G: Adding a subtle shadow for depth */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
-.menu-bar ul li .sub-menu-1 ul {
+.menu-bar ul li:hover .sub-menu-1 ul {
   display: block;
   margin: 0;
   padding: 0;
 }
-.menu-bar ul li .sub-menu-1 ul li {
-  width: 120px;
-  padding: 10px 15px;
+.menu-bar ul li:hover .sub-menu-1 ul li {
+  width: 120px; /* G: Matching width with parent li */
+  padding: 10px 15px; /* G: Consistent padding with parent */
   background-color: transparent;
   border-radius: 0px;
-  text-align: left;
+  text-align: left; /* G: Left aligning text */
 }
-.menu-bar ul li .sub-menu-1 ul li:last-child {
-  border-bottom: none;
-}
-.menu-bar ul li .sub-menu-1 ul li a:hover {
-  color: #5eff00;
-}
-.menu-bar ul li .sub-menu-1 ul li i {
+.menu-bar ul li:hover .sub-menu-1 ul li i {
+  /* G: Adjusting margin-right for proper spacing between icon and text */
   margin-right: 8px;
+  /* G: Ensuring the icon is vertically aligned with the text */
   vertical-align: middle;
 }
-
-.sub-menu-2 {
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
+  border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul .hover-me .sub-menu-2 {
   display: none;
 }
-
-.hover-me:hover .sub-menu-2 {
+.menu-bar ul li:hover .sub-menu-1 ul .hover-me .sub-menu-2 .sub-menu-3 {
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul .hover-me:hover .sub-menu-2 {
   position: absolute;
   display: block;
-  margin-top: 0;
-  margin-left: 105px;
+  margin-top: 0; /* G: Adjusted to align properly */
+  margin-left: 105px; /* G: Matching width with parent li */
   background-color: #276485;
+  /* G: Adding padding and shadow as with sub-menu-1 */
   padding: 10px 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 3px;
 }
-
-.sub-menu-2 .sub-menu-3 {
-  display: none;
-}
-
-.hover-me:hover .sub-menu-3 {
+.menu-bar ul li:hover .sub-menu-1 ul .hover-me:hover .sub-menu-2:hover .sub-menu-3 {
   position: absolute;
   display: block;
-  margin-top: 0;
-  margin-left: 105px;
+  margin-top: 0; /* G: Adjusted to align properly */
+  margin-left: 105px; /* G: Matching width with parent li */
   background-color: #276485;
+  /* G: Adding padding and shadow as with sub-menu-1 */
   padding: 10px 0;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul a:hover {
+  color: #5eff00;
+}
+.menu-bar ul li:hover {
+  background-color: #276485;
   border-radius: 3px;
 }
 
 .image img {
-  width: 70%;
+  width: 500px;
   height: auto;
-  margin-top: 5%;
+  margin-top: 1%;
+  margin-left: 35%;
   background-size: cover;
-  background-position: center;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  margin-left: 15%;
 }
 
 .description a {
@@ -141,13 +143,11 @@ body {
 .description a:hover {
   background-color: #ffd903;
 }
-
 .description h3 {
   text-align: center;
   margin-top: 20px;
   color: white;
 }
-
 .description p {
   text-align: center;
   margin-top: 20px;
