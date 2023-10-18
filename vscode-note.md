@@ -37,11 +37,15 @@
 
 
 
-
+- `Alt + up arrow` : move line up
+- `Alt + down arrow` : move line down
+- `Alt + left arrow` : go back
+- `Alt + right arrow` : go forward
+- `Alt + Z` : word wrap
 -word wrap: `Alt + Z` z means wrap or zip
+- `Alt + Shift + F` : format document
 
--go back: `Alt + left arrow`
-
+- 
 
 
 
@@ -65,3 +69,8 @@
 - press `Ctrl + /` to uncomment
 5. how to delete a line?
 - press `Ctrl + Shift + K` to delete line
+6. how to use shortcuts to taggle the current file in vs code
+- open bar by  cttl+ b 
+- then no need to click the file you wanna taggle 
+- make cursor move to current file name by ctrl + p
+- Or you can use ctrl + shift + e to taggle the current file, then use ctrl + shift + e to taggle back
