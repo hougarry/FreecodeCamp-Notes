@@ -44,3 +44,76 @@ hsl(0, 0%, 0%) means black, hsl(0, 0%, 100%) means white, hsl(0, 0%, 50%) means 
 
 The color name primary, secondary, neutral is defined in the css file. The number 900, 100 is defined in the css file.
 The color theme name is defined, the primary color is blue, the secondary color is green, and the neutral color is gray,and other theme color , such as red, yellow, purple, pink, orange, brown, etc. are defined in the css file.
+
+
+
+
+CSS:   scss tailwindcss  bootstrap
+bootstrap is a framework, tailwindcss is a library. scss is a library.
+
+JS:    vue.js react.js jquery node.js express.js 
+vue is different from react, vue is a framework, react is a library.
+like django is a framework, flask is a library.
+express.js is a framework, node.js is a library.
+jquery is a library.
+
+
+| Category       | Technology/Framework    | Description                                |
+| -------------- | ------------------------ | ------------------------------------------ |
+| Front-End      | CSS Framework            | Bootstrap with Sass                        |
+|                | JavaScript Library       | Vue.js                                     |
+| Back-End       | Node.js Framework        | Express                                    |
+|                | Python Frameworks        | Django (Python), Flask (Python)            |
+|                | Java Framework           | Spring Boot (Java)                         |
+| Data Storage   | Databases                | MongoDB (NoSQL), MySQL        |
+| Data Visualization | Libraries           | D3.js (JavaScript), Matplotlib (Python)   |
+
+
+
+
+# Certifications
+google machine learing engineer 
+
+IBM data science professional certificate
+
+meta backend certificate
+
+
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Technology/Framework</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td rowspan="2">Front-End</td>
+        <td>CSS Framework</td>
+        <td>Bootstrap with Sass</td>
+    </tr>
+    <tr>
+        <td>JavaScript Library</td>
+        <td>Vue.js</td>
+    </tr>
+    <tr>
+        <td rowspan="3">Back-End</td>
+        <td>Node.js Framework</td>
+        <td>Express</td>
+    </tr>
+    <tr>
+        <td>Python Frameworks</td>
+        <td>Django (Python), Flask (Python)</td>
+    </tr>
+    <tr>
+        <td>Java Framework</td>
+        <td>Spring Boot (Java)</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Data Storage</td>
+        <td>Databases</td>
+        <td>MongoDB (NoSQL), MySQL (Relational)</td>
+    </tr>
+    <tr>
+        <td>Data Visualization Libraries</td>
+        <td>D3.js (JavaScript), Matplotlib (Python)</td>
+    </tr>
+</table>
