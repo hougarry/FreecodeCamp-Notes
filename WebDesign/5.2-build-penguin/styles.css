@@ -1,42 +1,99 @@
 body {
-    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .left-mountain {
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
-    position: absolute;
-    transform: skew(0deg, 44deg);
-    z-index: 2;
-    margin-top: 100px;
-  }
-  
-  .penguin {
-    width: 300px;
-    height: 300px;
-    margin: auto;
-    margin-top: 75px;
-  }
-  
-  .ground {
-    width: 100vw;
-    height: 400px;
-    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
-    z-index: 3;
-    position: absolute;
-    margin-top: -58px;
-  }
+  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-  .back-mountain{
-    width: 300px;
-    height: 300px;
-    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
-    position: absolute;
+.left-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+  position: absolute;
+  transform: skew(0deg, 44deg);
+  z-index: 2;
+  margin-top: 100px;
+}
 
-  }
+.back-mountain {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+  position: absolute;
+  z-index: 1;
+  transform: rotate(45deg);
+  top: 225px;
+  left: 110px;
+
+}
+  
+.penguin {
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 75px;
+  position: relative;
+  z-index: 4;
+
+}
+.penguin-head{
+  width: 50%;
+  height: 45%;
+  background: linear-gradient(45deg, gray, rgb(239, 240, 228));
+  border-radius: 70% 70% 65% 65%;
+  top: 10%;
+  left: 25%;
+  z-index: 1;
+}
+.face{
+  height:70%;
+  width: 60%;
+  background-color: white;
+}
+.penguin-body{
+  top: 40%;
+  left: 23.5%;
+  width: 53%;
+  height: 45%;
+  background: linear-gradient(45deg, rgb(134,133,133) 0%, rgb(234,231,231) 25%, white 67%);
+  border-radius: 80% 80% 100% 100%;
+}
+/* penguin-body ::before means the first child of penguin-body which
+is the white part of the body */
+.penguin-body::before{
+  content: '';
+  position: absolute; /* absolute position relative to the parent */
+  background-color: gray;
+  width: 50%;
+  height: 45%;
+  top: 10%;
+  left: 25%;
+  border-radius: 0% 0% 100% 100%;
+  opacity: 0.7;   /* means 0.3 transparent */
+}
+
+.penguin *{
+  position: absolute;
+}
+/* penguin * means all elements inside penguin class */
+
+
+.ground {
+  width: 100vw;
+  height: 400px;
+  background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+  z-index: 3;
+  position: absolute;
+  margin-top: -58px;
+}
+.sun{
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+}
