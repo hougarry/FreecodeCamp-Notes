@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-size: cover;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.466),rgba(0, 0, 0, 0.829)), url(https://images.unsplash.com/photo-1517245386807-9b4d0d6f9a2a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80);
+}
+.menu-bar{
+    background-color: #042744;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    ul{
+        display: inline-flex;
+        list-style: none;
+        color: white;
+        /* G: Ensuring no padding or margin to avoid unnecessary space */
+        padding: 0;
+        margin: 10px;
+        li{
+            width: 120px;
+            /* G: Removing margin and applying it as padding for a cleaner hover effect */
+            padding: 15px;
+            /* G: Adding a subtle transition for hover effects */
+            transition: background-color 0.3s ease;
+            a{
+                text-decoration: none;
+                color: white;
+                /* G: Making sure text stays in line with icon if there is one */
+                vertical-align: middle;
+            }
+            
+            .sub-menu-1{
+                display: none;
+            }
+            &:hover {
+                .sub-menu-1{
+                    display: block;
+                    position: absolute;
+                    border-radius: 3px;
+                    background-color: #276485;
+                    margin-top: 5px;
+                    /* G: Ensuring sub-menu-1 takes the full width of li */
+                    margin-left: -15px;
+                    /* G: Adding padding to avoid text sticking to edges */
+                    padding: 10px 0;
+                    /* G: Adding a subtle shadow for depth */
+                    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+                    ul{
+                        display: block;
+                        margin: 0;
+                        padding: 0;
+                        
+                        li{
+                            width: 120px; /* G: Matching width with parent li */
+                            padding: 10px 15px; /* G: Consistent padding with parent */
+                            background-color: transparent;
+                            border-radius: 0px;
+                            text-align: left; /* G: Left aligning text */
+                            i{
+                                /* G: Adjusting margin-right for proper spacing between icon and text */
+                                margin-right: 8px;
+                                /* G: Ensuring the icon is vertically aligned with the text */
+                                vertical-align: middle;
+                            }
+
+                        }
+                        li:last-child{
+                            border-bottom: none;
+                        }
+                        .hover-me{
+                            .sub-menu-2{
+                                display: none;
+                                .sub-menu-3{
+                                    display: none;
+                                }
+                            }
+                            &:hover{
+                                .sub-menu-2{
+                                    position: absolute;
+                                    display: block;
+                                    margin-top: 0; /* G: Adjusted to align properly */
+                                    margin-left: 105px; /* G: Matching width with parent li */
+                                    background-color: #276485;
+                                    /* G: Adding padding and shadow as with sub-menu-1 */
+                                    padding: 10px 0;
+                                    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+                                    border-radius: 3px;
+                                    &:hover{
+                                        .sub-menu-3{
+                                            position: absolute;
+                                            display: block;
+                                            margin-top: 0; /* G: Adjusted to align properly */
+                                            margin-left: 105px; /* G: Matching width with parent li */
+                                            background-color: #276485;
+                                            /* G: Adding padding and shadow as with sub-menu-1 */
+                                            padding: 10px 0;
+                                            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+                                            border-radius: 3px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    ul a:hover{
+                        color: #5eff00;
+                    }
+                }
+            } 
+        }
+        li:hover{
+            background-color: #276485;
+            border-radius: 3px;
+        }       
+    }
+}
+
+
+
+.image img{
+    width: 500px;
+    height: auto;
+    margin-top: 1%;
+    margin-left: 35%;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+.description{
+    a{
+        text-align: center;
+        justify-content: center;
+        display: block;
+        width: 100px;
+        text-decoration: none;
+        color: white;
+        box-shadow: #276485;
+        background-color: #ff9800;
+        padding: 10px 20px;
+        font-size: 13px;
+        font-weight: bold;
+        border-radius: 3px;
+        border: 1px solid #ffd903;
+        padding: 10px 20px;
+        margin-left: 60%;
+        &:hover{
+            background-color: #ffd903;
+        }
+    }
+    h3{
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+    }
+    p{
+
+        text-align: center;
+        margin-top: 20px;
+        color: white;
+    }
+
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+.dropdown{
+    margin-left: 60%;
+}

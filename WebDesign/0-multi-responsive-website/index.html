@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./logo.svg" alt="logo" width="50" ></a>
+            <div class="nav-links" id="navlinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-house"></i>HOME</a></li>
+                        <li><a href=""><i class="fa-solid fa-me"></i>ABOUT</a></li>
+                        <li><a href="">COURSE</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <!--div should have more indentation than nav, otherwise you cannot see it -->
+    <div class="text-box">
+        <h1>World's Famous Univeristy</h1>
+        <p>
+            This is the most famous univeristy all over the world. It has the best teachers and the best students.
+            On this website you can find all the information you need about the univeristy.
+        </p>
+        <a href="" class="hero-btn">Know More</a>
+    </div>
+    </section>
+    <!--Course section-->
+    <section class="course">
+        <h1>
+            Courses We Offer
+        </h1>
+        <p>
+            We can offer you the best courses in the world. You can choose between the best teachers and the best courses.
+            Besides, you can choose between online courses and in person courses.
+        </p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Undergraduate</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>PHD</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="campus">
+        <h1>International Diversity Campus</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quisquam, voluptatum. Quisquam, voluptatum.
+        </p>
+        <div class="row">
+            <div class="campus-col">
+                <img src="./bg2.png" alt="">
+                <div class="layer">
+                    <h3>Canada</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="./bg2.png" alt="">
+                <div class="layer">
+                    <h3>USA</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="./bg2.png" alt="">
+                <div class="layer">
+                    <h3>UK</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>
+            Our Facilities
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quisquam, voluptatum. Quisquam, voluptatum.
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="./bg2.png" alt="">
+                <h3>World Class Infrastructure</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./bg2.png" alt="">
+                <h3>Powerful Lab </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./bg2.png" alt="">
+                <h3>World Library Infrastructure</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--JS for toggle menu-->
+    <script>
+        var navLinks = document.getElementById('navlinks');
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+
