@@ -46,8 +46,3 @@ button[type="submit"] {
 # 12. <track />: Specifies text tracks for media elements.
 # 13. <wbr />: Suggests an optional line break opportunity.
 
-
-
-# Import Bootstrap CDN and google font
-You can import bootsrap cnd,  google font
-fontawesome, jquery, popper.js
