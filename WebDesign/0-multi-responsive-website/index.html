@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fintech-Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="./logo.svg" alt="Fintech Lab Logo" width="50" ></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home"><i class="fa-solid fa-house"></i>HOME</a></li>
+                    <li><a href="#about"><i class="fa-solid fa-circle-info"></i>ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#resources">RESOURCES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <!--div should have more indentation than nav, otherwise you cannot see it -->
+    <div class="text-box">
+        <h1>Innovate with Fintech Lab</h1>
+        <p>
+            At the forefront of financial technology, Fintech Lab drives innovation with cutting-edge research and development. Join us in reshaping the future of finance.
+        </p>
+        <a href="" class="hero-btn">Explore Innovations</a>
+    </div>
+    </section> 
+    <!--services section-->
+    <section class="services">
+        <h1>Our Services</h1>
+        <p>Delivering expert solutions in blockchain, digital banking, and cybersecurity to revolutionize financial interactions.</p>
+        <div class="row">
+            <div class="service-col">
+                <h3>Blockchain Solutions</h3>
+                <p>
+                    Building transparent, efficient, and secure systems with blockchain technology to empower businesses and consumers alike.
+                </p>
+            </div>
+            <div class="service-col">
+                <h3>Digital Banking</h3>
+                <p>
+                    Pioneering the next generation of banking with digital-first solutions for a seamless, intuitive, and flexible banking experience.
+                </p>
+            </div>
+            <div class="service-col">
+                <h3>Cybersecurity Defense</h3>
+                <p>
+                    Protecting financial data with robust cybersecurity measures, ensuring safety and trust in digital transactions.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="resources">
+        <h1>Learning Resources</h1>
+        <p>Expand your knowledge with our extensive library of Fintech materials, ranging from beginner to expert levels.</p>        
+        <div class="projects">
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="./lab1.png" alt="" >
+                </div>
+                <div class="hover-items">
+                    <h3>Code Source</h3>
+                    <div class="icons">
+                        <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="./lab2.png" alt="" >
+                </div>
+                <div class="hover-items">
+                    <h3>Code Source</h3>
+                    <div class="icons">
+                        <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="./lab3.png" alt="" >
+                </div>
+                <div class="hover-items">
+                    <h3>Code Source</h3>
+                    <div class="icons">
+                        <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="./lab4.png" alt="" >
+                </div>
+                <div class="hover-items">
+                    <h3>Code Source</h3>
+                    <div class="icons">
+                        <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-item">
+                <div class="project-image">
+                    <img src="/img/port-1.jpg" alt="" >
+                </div>
+                <div class="hover-items">
+                    <h3>Code Source</h3>
+                    <div class="icons">
+                        <a  href="" class="icon" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a  href="" class="icon" target="_blank"><i class="fa-solid fa-link"></i></a>
+                        <a href="https://www.freecodecamp.org/Gary_Hou" class="icon" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="facilities">
+        <h1>
+            Our Facilities
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quisquam, voluptatum. Quisquam, voluptatum.
+        </p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="./bg2.png" alt="">
+                <h3>World Class Infrastructure</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./bg2.png" alt="">
+                <h3>Powerful Lab </h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+            <div class="facilities-col">
+                <img src="./bg2.png" alt="">
+                <h3>World Library Infrastructure</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Quisquam, voluptatum. Quisquam, voluptatum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!--JS for toggle menu-->
+    <script>
+        var navLinks = document.getElementById('navlinks');
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
+
