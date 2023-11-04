@@ -1,0 +1,287 @@
+// Variables
+$primary-color: #3498db;
+$secondary-color: #2c3e50;
+$white-color: #ffffff;
+
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+//@mixin is used to create reusable blocks of CSS declarations.
+
+// Base styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: $secondary-color;
+  color: $white-color;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+// Header and nav
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./bg.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  nav{
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+      .fa-solid{
+          display: none;
+      }
+      img{
+          width: 50px;
+      }
+      .nav-links{
+          flex: 1;
+          text-align: right;
+          ul{
+              list-style: none;
+              li{
+                  list-style: none;
+                  display: inline-block;
+                  padding: 8px 12px;
+                  position: relative;
+                  &::after{
+                      content: '';
+                      width: 0%;
+                      height: 3px;
+                      background: $primary-color;
+                      display: block;
+                      margin: auto;
+                      transition: 0.5s;
+                  }
+                  &:hover::after{
+                      width: 100%;
+                  }
+              }
+          }
+          a{
+              color: white;
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 14px;
+          }
+  
+      }
+  }
+  .text-box{
+      width: 90%;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+      h1{
+          font-size: 62px;
+      }
+      p{
+          margin: 10px 0 40px;
+          font-size: 14px;
+          color: white;
+      }
+      .hero-btn{
+          display: inline-block;
+          border-radius: 15px;
+          text-decoration: none;
+          color: #fff;
+          border: 1px solid #fff;
+          padding: 12px 34px;
+          font-size: 13px;
+          background: transparent;
+          position: relative;
+          cursor: pointer;
+          &:hover{
+              border: 1px solid $primary-color;
+              background: $primary-color;
+              transition: 1s;
+          }
+      }
+  }
+}
+
+// Hero section
+#hero {
+  padding: 60px 0;
+  text-align: center;
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    border: none;
+    border-radius: 3px;
+    color: $white-color;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+// Features and Pricing
+#features {
+  padding: 4rem 0; // Adjust the padding as needed for your layout
+  text-align: center; // Centers the text in each `.desc`
+  border-radius: 15px;
+  .grid {
+    display: flex; // Use flexbox for layout
+    align-items: center; // Align items vertically
+    justify-content: center; // Center the items horizontally
+    margin-bottom: 2rem; // Space between each grid item
+    
+    &:last-child {
+      margin-bottom: 0; // Remove bottom margin for the last item
+    }
+    .desc {
+      max-width: 600px; // Max width of description, for readability
+      margin: 0 auto; // Centers the description in the grid if it's less than max width
+
+      h2 {
+        color: #fef6f6; // Dark grey for text, for contrast
+        font-size: 2rem; // Large font size for headings
+        margin-bottom: 1rem; // Space between heading and paragraph
+      }
+
+      p {
+        color: #f1eeee; // Lighter grey for the paragraph, for readability
+        font-size: 1rem; // Font size for paragraph
+        line-height: 1.5; // Line height for paragraph readability
+      }
+    }
+  }
+}
+#howItWorks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem 0;
+
+  #video {
+    max-width: 100%;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem;
+  }
+
+  .desc {
+    background: rgba(255, 255, 255, 0.8); // Light semi-transparent background
+    padding: 2rem;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 600px; // Maximum width for description box
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    h2 {
+      color: rgba(33, 37, 41, 0.8); // Dark text with slight transparency
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: rgba(108, 117, 125, 0.8); // Gray text with slight transparency
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+#pricing {
+  background: rgba(248, 249, 250, 0.8); // A soft background with transparency for the pricing section
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  .product {
+    background: rgba(255, 255, 255, 0.95); // A near opaque white background for product cards
+    border-radius: 8px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    width: 250px; // Adjust width as necessary
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-0.5rem); // Lift card on hover for interactive effect
+    }
+
+    .level, h2 {
+      color: rgba(0, 0, 0, 0.85); // Nearly black text
+    }
+
+    .badge {
+      background: rgba(220, 53, 69, 0.95); // Badge color with slight transparency
+      // Rest of the badge styles...
+    }
+
+    // Styles for ol, li, and .btn elements...
+  }
+}
+
+#about {
+  padding: 4rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.03); // Slightly dark background to make white text pop
+
+  h2 {
+    color: rgba(0, 123, 255, 0.8); // Slightly transparent blue color for headings
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: rgba(73, 80, 87, 0.8); // Slightly transparent text color for paragraphs
+    margin-bottom: 1rem;
+  }
+}
+
+
+
+
+// Media queries
+@media (max-width: 600px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+// Footer
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: darken($secondary-color, 15%);
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+
+    li {
+      display: inline;
+      margin: 0 10px;
+    }
+  }
+}
