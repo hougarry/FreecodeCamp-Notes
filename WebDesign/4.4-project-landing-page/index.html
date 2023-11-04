@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous" />
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <section class="header">
+                <nav>
+                    <a href="index.html"><img src="./logo.svg" alt="" width="50" ></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa-solid fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="#home"><i class="fa-solid fa-house"></i>HOME</a></li>
+                            <li><a href="#features"><i class="fa-solid fa-circle-info"></i>FEATURES</a></li>
+                            <li><a href="#howItWorks"></a>HOW-IT-WORKS</li>
+                            <li><a href="#pricing">PRICING</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+                </nav>
+            <section class="text-box">
+                <h2>Welcome to Digital Coin Wallet</h2>
+                <p>Unleash the power of cryptocurrency in your pocket. Experience seamless transactions, top-tier security, and groundbreaking innovations—all in one platform.</p>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+    
+                    <input id="submit" type="submit" value="Subscribe" class="hero-btn" />
+                </form>
+            </section>
+        </section>
+        <div class="container">
+            <section id="features">
+                <div class="grid">
+                    
+                    <div class="desc">
+                        <i class="fa fa-3x fa-shield-alt"></i><h2>High Security</h2>
+                        <p>
+                            State-of-the-art security measures to protect your digital assets.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">   
+                    <div class="desc">
+                        <i class="fa fa-3x fa-exchange-alt"></i>
+                        <h2>Easy Exchanges</h2>
+                        <p>
+                            Seamless transactions and currency exchanges at your fingertips.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+                    <div class="desc">
+                        <i class="fa fa-3x fa-wallet"></i><h2>Universal Wallet</h2>
+                        <p>
+                            Store a variety of cryptocurrencies in one place.
+                        </p>
+                    </div>
+                </div>
+                <div class="grid">
+               
+                    <div class="desc">
+                        <i class="fa fa-3x fa-globe"></i><h2>Global Access</h2>
+                        <p>
+                            Access your wallet anywhere in the world.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="howItWorks">
+                <iframe id="video" height="315"  frameborder="0" src="https://www.youtube.com/watch?v=1YyAzVmP9xQ&pp=ygUOY3J5cHRvY3VycmVuY3k%3D" allowfullscreen></iframe>
+                <div class="desc">
+                    <h2>How It Works</h2>
+                    <p>Our platform is built on the Ethereum blockchain, the most secure blockchain with a built-in
+                        programming language. This allows us to create a decentralized system that is both fast and
+                        secure.</p>
+                    <p>Our platform is built on the Ethereum blockchain, the most secure blockchain with a built-in
+                        programming language. This allows us to create a decentralized system that is both fast and
+                        secure.</p>
+                </div>
+            </section>
+
+            <section id="pricing">
+                <div class="product" id="basic">
+                    <div class="level">Basic Plan</div>
+                    <h2>$5/month</h2>
+                    <ol>
+                        <li>Basic protection</li>
+                        <li>5 Cryptocurrencies supported</li>
+                        <li>Standard transaction fees</li>
+                    </ol>
+                    <button class="btn">Select</button>
+                </div>
+                <div class="product" id="inter">
+                    <h2>
+                        <span class="level">Pro Plan</span>
+                        <span class="badge">Most Popular</span>
+                    </h2>
+                    <h2>$10/month</h2>
+                    <ol>
+                        <li>Advanced protection</li>
+                        <li>Unlimited Cryptocurrencies supported</li>
+                        <li>Lower transaction fees</li>
+                    </ol>
+                </div>
+                <div class="product" id="vip">
+                    <h2>
+                        <span class="level">VIP Plan</span>
+                    </h2>
+                    <h2>$20/month</h2>
+                    <ol>
+                        <li>Advanced protection</li>
+                        <li>Unlimited Cryptocurrencies supported</li>
+                        <li>Lower transaction fees</li>
+                        <li>Priority customer support</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section id="about">
+                <h2>About Digital Coin Wallet</h2>
+                <p>Our mission is to provide a secure, user-friendly platform for cryptocurrency transactions and storage. We prioritize user experience and safety above all.</p>
+                <p>Our team is made up of cryptocurrency enthusiasts with extensive experience in blockchain technology, web development, and cybersecurity. We are committed to building a better future for finance.</p>
+                
+            </section>
+
+            <footer>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-github"></i>
+                <i class="fab fa-linkedin"></i>
+                <i class="fas fa-envelope"></i>
+                <span>Copyright 2023, Digital Coin Wallet</span>
+            </footer>
+        </div>
+    </div>
+    <script>
+        var navLinks = document.getElementById('navlinks');
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
